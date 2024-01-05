@@ -1,30 +1,40 @@
-# React + TypeScript + Vite
+# Snapgram
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Snapgram is a social media platform where users can share photos and connect with others. This project is built using [React](https://reactjs.org/) for the frontend, [React Query](https://react-query.tanstack.com/) for managing server state, and [Appwrite](https://appwrite.io/) as the backend service.
 
-Currently, two official plugins are available:
+![Snapgram Screenshot](./path/to/screenshot.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Table of Contents
 
-## Expanding the ESLint configuration
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Features
 
-- Configure the top-level `parserOptions` property like this:
+- **User Authentication:** Users can sign up, log in, and log out securely.
+- **Post Creation and Interaction:** Create, like, save, and delete posts.
+- **Profile Management:** View and update user profiles.
+- **Infinite Scroll:** Enjoy a seamless browsing experience with infinite scroll.
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+## Installation
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/Fezaan/Snapgram.git
+2. Change into the Snapgram directory
+
+   ```bash
+   cd Snapgram
+3. Install the necessary dependencies
+
+   ```bash
+   npm install
+4. Run the command
+
+   ```bash
+   npm run dev
+5. The server will start running at [http://localhost:5173/](http://localhost:5173/)

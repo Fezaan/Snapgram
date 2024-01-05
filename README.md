@@ -2,8 +2,6 @@
 
 Snapgram is a social media platform where users can share photos and connect with others. This project is built using [React](https://reactjs.org/) for the frontend, [React Query](https://react-query.tanstack.com/) for managing server state, and [Appwrite](https://appwrite.io/) as the backend service.
 
-![Snapgram Screenshot](./public/assets/images/snapgram.png)
-
 ## Table of Contents
 
 - [Features](#features)

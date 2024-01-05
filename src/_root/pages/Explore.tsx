@@ -50,7 +50,10 @@ const Explore = () => {
         {shouldShowSearchResults ? (
           <SearchResults
           isSearchFetching={isSearchFetching}
-          searchedPosts={searchedPosts} />
+          searchedPosts={searchedPosts || []} />
+          // <SearchResults
+          // isSearchFetching={isSearchFetching}
+          // searchedPosts={searchedPosts} />
         ) : shouldShowPosts ? (
           <p className='text-light-4 mt-10 text-center w-full'>End f posts.</p>
         ) : posts.pages.map((item,index) => (

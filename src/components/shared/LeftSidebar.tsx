@@ -7,9 +7,12 @@ import { sidebarLinks } from "@/constants";
 import { INavLink } from "@/types";
 
 const LeftSidebar = () => {
+  // Using React Router's useLocation and useNavigate hooks
   const {pathname}= useLocation();
   const navigate=useNavigate();
+  // Using the useSignOutAccount mutation from React Query
   const {mutate: signOut, isSuccess}= useSignOutAccount();
+  // Using the useUserContext custom hook to access user data from context
   const {user}=useUserContext();
   useEffect(()=>{
       if(isSuccess) navigate(0);

@@ -6,6 +6,7 @@ Snapgram is a social media platform where users can share photos and connect wit
 
 - [Features](#features)
 - [Installation](#installation)
+- [References](#references)
 
 ## Features
 
@@ -28,15 +29,11 @@ Snapgram is a social media platform where users can share photos and connect wit
 
    ```bash
    npm install
-4. Run the command
-
-   ```bash
-   npm run dev
-5. Create a .env.local file in the root folder
+4. Create a .env.local file in the root folder
 
    ```bash
    touch .env.local
-6. Copy and paste the following code in the .env.local file
+5. Copy and paste the following code in the .env.local file
 
    ```bash
    VITE_APPWRITE_PROJECT_ID='6587169b04394856328a'
@@ -45,6 +42,11 @@ Snapgram is a social media platform where users can share photos and connect wit
    VITE_APPWRITE_DATABASE_ID='6589920f521c885b08eb'
    VITE_APPWRITE_SAVES_COLLECTION_ID='658992ab400b85316d51'
    VITE_APPWRITE_USER_COLLECTION_ID='6589929299c8c7e0c625'
-   VITE_APPWRITE_POST_COLLECTION_ID='65899258c1a8daf9d177'
+   VITE_APPWRITE_POST_COLLECTION_ID='65899258c1a8daf9d177'6
+6. Run the command
+
+   ```bash
+   npm run dev
    
 7. The server will start running at [http://localhost:5173/](http://localhost:5173/)
+

@@ -1,30 +1,50 @@
-# React + TypeScript + Vite
+# Snapgram
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Snapgram is a social media platform where users can share photos and connect with others. This project is built using [React](https://reactjs.org/) for the frontend, [React Query](https://react-query.tanstack.com/) for managing server state, and [Appwrite](https://appwrite.io/) as the backend service.
 
-Currently, two official plugins are available:
+## Table of Contents
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Features](#features)
+- [Installation](#installation)
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **User Authentication:** Users can sign up, log in, and log out securely.
+- **Post Creation and Interaction:** Create, like, save, and delete posts.
+- **Profile Management:** View and update user profiles.
+- **Infinite Scroll:** Enjoy a seamless browsing experience with infinite scroll.
 
-- Configure the top-level `parserOptions` property like this:
+## Installation
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+1. Clone the repository:
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+   ```bash
+   git clone https://github.com/Fezaan/Snapgram.git
+2. Change into the Snapgram directory
+
+   ```bash
+   cd Snapgram
+3. Install the necessary dependencies
+
+   ```bash
+   npm install
+4. Run the command
+
+   ```bash
+   npm run dev
+5. Create a .env.local file in the root folder
+
+   ```bash
+   touch .env.local
+6. Copy and paste the following code in the .env.local file
+
+   ```bash
+   VITE_APPWRITE_PROJECT_ID='6587169b04394856328a'
+   VITE_APPWRITE_URL='https://cloud.appwrite.io/v1'
+   VITE_APPWRITE_STORAGE_ID='658991c96056fd7fb28e'
+   VITE_APPWRITE_DATABASE_ID='6589920f521c885b08eb'
+   VITE_APPWRITE_SAVES_COLLECTION_ID='658992ab400b85316d51'
+   VITE_APPWRITE_USER_COLLECTION_ID='6589929299c8c7e0c625'
+   VITE_APPWRITE_POST_COLLECTION_ID='65899258c1a8daf9d177'
+   
+7. The server will start running at [http://localhost:5173/](http://localhost:5173/)
